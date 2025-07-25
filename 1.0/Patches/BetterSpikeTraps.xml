@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "TrapSpike"]/description</xpath>
+				<value>
+					<description>Five spikes under tension, connected to a touch-activated trigger. When the victim disturbs the trigger, the spikes spring forth and strike the victim. Animals can sense these when calm.</description>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "TrapSpike"]/placeWorkers</xpath>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "TrapSpike"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>15</costStuffCount>
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+</Patch>
