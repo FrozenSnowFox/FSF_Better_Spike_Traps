@@ -16,7 +16,7 @@
 			</li>
 
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "TrapSpike"]/placeWorkers</xpath>
+				<xpath>/Defs/ThingDef[defName = "TrapSpike"]/placeWorkers/li[text()="PlaceWorker_NeverAdjacentTrap"]</xpath>
 			</li>
 
 			<li Class="PatchOperationReplace">
@@ -26,10 +26,30 @@
 				</value>
 			</li>
 			
+			<!-- Vanilla Factions Expanded Tribals -->
+			
+			<li MayRequire="OskarPotocki.VFE.Tribals" Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VFET_AnimalTrap"]/description</xpath>
+				<value>
+					<description>A large, sharp spike under tension, connected to a touch-activated trigger. If an animal touches the trigger, the spike springs forth and strikes it. Animals do not sense these when calm, but they are quite obvious to humans and will be avoided by them.</description>
+				</value>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Tribals" Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "VFET_AnimalTrap"]/placeWorkers/li[text()="PlaceWorker_NeverAdjacentTrap"]</xpath>
+			</li>
+			
 			<!-- Vanilla Furniture Expanded Security -->
 			
+			<li MayRequire="VanillaExpanded.VFESecurity" Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VFET_AnimalTrap"]/description</xpath>
+				<value>
+					<description>Two heavy metal jaws held open under tension, connected to a pressure-sensitive trigger. When stepped on, the jaws snap shut with high force, inflicting severe damage. When triggered, it can be re-armed.</description>
+				</value>
+			</li>
+			
 			<li MayRequire="VanillaExpanded.VFESecurity" Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "VFES_BearTrap"]/placeWorkers</xpath>
+				<xpath>/Defs/ThingDef[defName = "VFES_BearTrap"]/placeWorkers/li[text()="PlaceWorker_NeverAdjacentTrap"]</xpath>
 			</li>
 			
 		</operations>

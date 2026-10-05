@@ -19,6 +19,7 @@
     <tickerType>Normal</tickerType>
     <stealable>false</stealable>
     <minifiedDef>MinifiedThing</minifiedDef>
+    <uiOrder>30</uiOrder>
     <thingCategories>
       <li>BuildingsSecurity</li>
     </thingCategories>

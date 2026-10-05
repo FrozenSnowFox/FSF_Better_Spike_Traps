@@ -17,6 +17,7 @@
 	</supportedVersions>
 	<description>Does various changes to make spike traps more useful.</description>
 	<loadAfter>
+		<li>OskarPotocki.VFE.Tribals</li>
 		<li>VanillaExpanded.VFESecurity</li>
 	</loadAfter>
 	
